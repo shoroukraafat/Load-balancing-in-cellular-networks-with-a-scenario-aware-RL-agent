@@ -1,11 +1,5 @@
 # Mobility Load Management 
-We consider the problem of mobility load management (balancing) in cellular LTE networks. In this page we provide the source codes for the following papers:
-
-1- "Mobility Load Management in Cellular Networks: A Deep Reinforcement Learning Approach":
-We propose a comprehensive deep reinforcement learning (RL) framework for steering the cell individual offset (CIO) of every pair of cells. We consider two scenarios, Proof-of-Concept scenario and Realistic LTE Network Scenario.
-
-2- "Optimized Power and Cell Individual Offset for Cellular Load Balancing via Reinforcement Learning":
-In this work, we propose a joint power levels and CIOs optimization using reinforcement learning (RL).
+We consider the problem of optimization of mobile networks. We aim to enhance the network throughput, minimize energy consumption, and improve network coverage. The problem is cast as a reinforcement learning (RL) problem. The reward function accounts for the joint optimization of throughput, energy consumption, and coverage; our formulation allows the network operator to assign weights to each of these cost functions based on the operator’s preferences. Moreover, the state is defined by key performance indicators (KPIs) that are readily available on the network operator side. Finally, the action space for the RL agent comprises a hybrid action space, where we have two continuous action elements, namely, cell individual offsets (CIOs) and transmission powers, and one discrete action element, which is switching MIMO ON and OFF.
 
 
 # Installation
