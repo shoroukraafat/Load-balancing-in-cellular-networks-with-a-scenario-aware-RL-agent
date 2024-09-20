@@ -67,88 +67,24 @@ Notice that: If the ./waf command resulted in an error, remove the directory Pat
 - right-click to open the terminal and run the command:
      
 ```
-$ ./script_LTE_POCS.sh
+$ ./New_agent.sh
 ```
 For the first run, you may need to run
 ```
-$ chmod +x ./script_LTE_POCS.sh
+$ chmod +x ./New_agent.sh
 ```
 
 -To run one episode only run the following command instead:
 
 ```
-$ ./waf --run "scratch/POCS/POCS --RunNum=$(($i))"
+$ ./waf --run "scratch/New_agnet/New_agent --RunNum=$(($i))"
 ```
 
 - Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
      
 ```
-$ cd scratch/POCS
-$ python3 ddqn_agent.py
-```
-
-13- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
-
-- right-click to open the terminal and run the command:
-     
-```
-$ ./script_LTE_RealSce.sh
-```
-
-- To run one episode only run the follosing command instead:
-     
-```
-$ ./waf --run "scratch/RealSce/RealSce --RunNum=$(($i))"
-```
-
-- Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
-     
-```
-$ cd scratch/RealSce
-$ python3 Agent_TD3.py
-```
-
-14- To run the joint power and CIO optimization scenario.
-
-In the directory Path_to_NS3_Directoy:
-
-- right-click to open the terminal and run the command:
-     
-```
-$ ./Power_CIO.sh
-```
-
-- To run one episode only run the follosing command instead:
-     
-```
-$ ./waf --run "scratch/Power_CIO/Power_CIO"
-```
-
-- Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
-     
-```
-$ cd scratch/Power_CIO
-$ python3 BL_TD3.py
+$ cd scratch/New_agent
+$ python3 Aug_agent.py
 ```
 
 
-
-# References
-If you find this code useful for your research, please cite the following papers:
-```
-@article{Alsuhli2020Mobility,
-  title={Mobility Load Management in Cellular Networks: A Deep Reinforcement Learning Approach},
-  author={Alsuhli, Ghada and Banawan, Karim and Attiah, Kareem and Elezabi, Ayman and Seddik, Karim and Gaber, Ayman and Zaki, Mohamed and Gadallah, Yasser},
-  journal={arXiv preprint XXXXXXXX},
-  year={2020}
-}
-
-@inproceedings{alsuhli2021optimized,
-  title={Optimized power and cell individual offset for cellular load balancing via reinforcement learning},
-  author={Alsuhli, Ghada and Banawan, Karim and Seddik, Karim and Elezabi, Ayman},
-  booktitle={2021 IEEE Wireless Communications and Networking Conference (WCNC)},
-  pages={1--7},
-  year={2021},
-  organization={IEEE}
-}
-```
