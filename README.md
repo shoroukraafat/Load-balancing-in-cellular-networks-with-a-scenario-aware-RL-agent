@@ -29,13 +29,13 @@ We consider the problem of optimization of mobile networks. We aim to enhance th
 
 Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
-1- Copy POCS, RealSce and Power_CIO folders to Path_to_NS3_Directory/scratch/. Try not to use nested folders i.e. avoid: scratch/folder1/folder2/file.cc, instead use scratch/folder1/file.cc. 
+1- Copy New_agent folder to Path_to_NS3_Directory/scratch/. Try not to use nested folders i.e. avoid: scratch/folder1/folder2/file.cc, instead use scratch/folder1/file.cc. 
 
 2- Replace the diectory Path_to_NS3_Directory/scr/lte with the directory inside the archived file in lte(1).zip (Rememebr to backup the original)
 
 3- Copy cell-individual-offset.h and cell-individual-offset.cc to Path_to_NS3_Directoy/src/lte/model/.
 
-4- Copy LTE_Attributes.txt, Real_model-attributes.txt, script_LTE_POCS.sh, script_LTE_RealSce.sh and Power_CIO.sh to Path_to_NS3_Directoy/.
+4- Copy LTE_Attributes.txt, Real_model-attributes.txt, and New_agent.sh to Path_to_NS3_Directoy/.
 
 5- Copy and replace lte-ue-rrc.cc with Path_to_NS3_Directoy/src/lte/model/lte-ue-rrc.cc (Rememebr to backup the original).
 
