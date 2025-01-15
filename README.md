@@ -1,5 +1,6 @@
 # Mobility Load Management 
 We consider the problem of optimization of mobile networks. We aim to enhance the network throughput, minimize energy consumption, and improve network coverage. The problem is cast as a reinforcement learning (RL) problem. The reward function accounts for the joint optimization of throughput, energy consumption, and coverage; our formulation allows the network operator to assign weights to each of these cost functions based on the operator’s preferences. Moreover, the state is defined by key performance indicators (KPIs) that are readily available on the network operator side. Finally, the action space for the RL agent comprises a hybrid action space, where we have two continuous action elements, namely, cell individual offsets (CIOs) and transmission powers, and one discrete action element, which is switching MIMO ON and OFF.
+Ref. repo: https://github.com/Ghada-sy/Load-Management
 
 
 # Installation
